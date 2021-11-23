@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+        <script>
+            function parImpar()
+            {
+                var valor=parseInt(document.getElementById('valor').value);
+                var tipo=(valor%2)?"Impar":"Par";
+                document.getElementById('resultado').innerHTML='El numero '+valor+' es '+tipo
+                var li
+                for (var i=0; i<valor; i++){}
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        Hola desde el EJS
+        <form>
+            <input type="button" id="valor" value="<%= ID %>" onclick="return parImpar()">
+        </form>
+        <h1 id='resultado'></h1>
+        <ol>
+            <li value="i"></li>
+        </ol>
+    </body>
+</html>
